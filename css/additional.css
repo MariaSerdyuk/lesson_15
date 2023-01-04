@@ -1,0 +1,72 @@
+/*Orange button*/
+.button{
+font-family: "Lato";
+font-weight: 700;
+line-height: 1.25;
+letter-spacing: 0.5px;
+text-align: center;
+color: white;
+display: inline-block;
+padding: 16px 40px;
+border-radius: 4px;
+position: relative;
+background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
+}
+.button::before {
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+border-radius: 4px;
+opacity: 0;
+transition: opacity 0.3s ease 0s;
+background: linear-gradient(55.95deg, #ff0800 0%, #cc4b00 100%);
+}
+.button:hover::before{
+opacity: 1;
+}
+.button span {
+position: relative;
+z-index: 2;
+}
+/*transparent button*/
+.button--transparent{
+	background: transparent;
+	color: #FF3F3A;
+	border: 1px solid #FF3F3A;
+	padding: 15px 39px;
+	transition: all 0.3s ease 0s;
+}
+.button--transparent:hover {
+	background: #f22720;
+	color: white;
+}
+/*---------------------------------*/
+/*Titles*/
+.titles-block {
+	font-family: "Lato";
+	font-weight: 900;
+	color: #1E212C;
+}
+/*.titles-block как БЄМ-элемент*/
+.titles-block:not(:last-child){
+	margin-bottom: 60px;
+}
+.titles-block__second {
+	line-height: 1.5;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 1px;
+	margin-bottom: 8px;
+}
+.titles-block__main {
+	line-height: 1.3;
+	font-weight: 900;
+	font-size: 46px;
+	margin-bottom: 8px;
+}
+.titles-block--indent:not(:last-child) {
+	margin-bottom: 40px;
+}
